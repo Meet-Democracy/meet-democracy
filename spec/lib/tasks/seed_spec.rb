@@ -13,7 +13,7 @@ describe "rake db:seed" do
       paths = { accessibility: "pages.accessibility.title",
                 conditions: "pages.conditions.title",
                 faq: "pages.help.faq.page.title",
-                privacy: "pages.privacy.title"}
+                privacy: "pages.privacy.title" }
 
       I18n.available_locales.each do |locale|
         I18n.with_locale(locale) do
