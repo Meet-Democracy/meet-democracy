@@ -1,7 +1,6 @@
 require "rails_helper"
 
 describe Users::CookiesConsentComponent do
-
   describe "After User Login" do
     let(:user) { create(:user) }
     let(:component) { Users::CookiesConsentComponent.new }
