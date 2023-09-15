@@ -46,7 +46,7 @@ describe "Cookies Consent" do
       logout
       expect(page).not_to have_css ".cookies-eu"
     end
-  
+
     scenario "Do not show again when accepted before login" do
       visit root_path
       within(".cookies-eu") do
