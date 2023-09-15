@@ -28,7 +28,7 @@ class Users::SessionsController < Devise::SessionsController
 
     def update_cookies_consent
       if cookies[:cookie_eu_consented] == "true"
-        user.update!(cookies_consent: true)
+        @user.update!(cookies_consent: true)
       end
     end
 end
